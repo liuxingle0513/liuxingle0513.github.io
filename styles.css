@@ -359,6 +359,10 @@ a { color: inherit; }
   background: var(--forest);
 }
 
+.metric-grid .metric-wide {
+  grid-column: 1 / -1;
+}
+
 .metric-grid strong {
   display: block;
   color: var(--lime);
@@ -626,6 +630,47 @@ a { color: inherit; }
   margin: 7px 0 0;
   font-size: 14px;
   line-height: 1.45;
+}
+
+.academic-standing {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  margin-top: 30px;
+  padding-top: 30px;
+  border-top: 1px solid var(--line);
+  background: var(--line);
+}
+
+.academic-standing > div {
+  padding: 18px;
+  background: var(--white);
+}
+
+.academic-standing span {
+  color: var(--jade);
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+.academic-standing p {
+  margin: 7px 0 0;
+  font-size: 13px;
+}
+
+.academic-standing strong {
+  font-family: var(--serif);
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.academic-standing small {
+  display: block;
+  margin-top: 2px;
+  color: var(--ink-soft);
+  font-size: 10px;
 }
 
 .skills-section { background: var(--paper-deep); }
@@ -901,6 +946,7 @@ a { color: inherit; }
   .publication-index { font-size: 30px; }
   .education-card { padding: 28px; }
   .education-details { grid-template-columns: 1fr; }
+  .academic-standing { grid-template-columns: 1fr; }
   .skill-grid { grid-template-columns: 1fr; }
   .skill-card { min-height: 180px; }
   .skill-number { margin-bottom: 32px; }
