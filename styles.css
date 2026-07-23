@@ -819,21 +819,12 @@ a { color: inherit; }
 .site-footer a { text-underline-offset: 4px; }
 
 .reveal {
-  opacity: 0;
-  transform: translateY(18px);
-  transition: opacity .65s ease, transform .65s ease;
-}
-
-.reveal-delay { transition-delay: .12s; }
-
-.reveal.is-visible {
   opacity: 1;
-  transform: translateY(0);
+  transform: none;
 }
 
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
-  .reveal { opacity: 1; transform: none; transition: none; }
   .button { transition: none; }
 }
 

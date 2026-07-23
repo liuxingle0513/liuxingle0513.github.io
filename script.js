@@ -14,19 +14,5 @@ primaryNav?.querySelectorAll("a").forEach((link) => {
   });
 });
 
-const observer = new IntersectionObserver(
-  (entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("is-visible");
-        observer.unobserve(entry.target);
-      }
-    });
-  },
-  { threshold: 0.1 }
-);
-
-document.querySelectorAll(".reveal").forEach((element) => observer.observe(element));
-
 const year = document.querySelector("#year");
 if (year) year.textContent = String(new Date().getFullYear());
