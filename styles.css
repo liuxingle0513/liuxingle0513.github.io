@@ -716,7 +716,7 @@ a { color: inherit; }
 }
 
 .award-card {
-  grid-column: span 2;
+  grid-column: span 3;
   min-height: 300px;
   padding: 28px;
   background: var(--white);
